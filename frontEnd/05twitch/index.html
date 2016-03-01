@@ -1,0 +1,56 @@
+<head>
+  <title>FCC-Twitch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+  <!-- Materialize compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <!-- Materialize compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+  <div class="container myContainer">
+    <div class="row mtop">
+      <h1></h1>
+      <div class="col s12">
+        <!-- Tabs -->
+        <ul class="tabs">
+          <li id="all" class="tab col s3">
+            <a class="active">
+              <i class="material-icons">language</i> All
+            </a>
+          </li>
+          <li id="online" class="tab col s3">
+            <a>
+              <i class="material-icons">chat_bubble</i> Online
+            </a>
+          </li>
+          <li id="offline" class="tab col s3">
+            <a>
+              <i class="material-icons">chat_bubble_outline</i> Offline
+            </a>
+          </li>
+        </ul>
+        <!-- Search box -->
+        <nav>
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field deep-purple lighten-3">
+                <input id="search" type="search" placeholder="Search user" autocomplete="off" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <!-- Channels -->
+        <ul class="collection s12">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>

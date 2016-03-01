@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <title>FCC-Simon</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="normalize.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://rawgit.com/pouyio/fcc-simon/master/DIGITALDREAM.ttf" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="row">
+      <div class="push push0 inline" number="0" id="push0"></div>
+      <div class="push push1 inline" number="1" id="push1"></div>
+    </div>
+    <div class="row">
+      <div class="push push2 inline" number="2" id="push2"></div>
+      <div class="push push3 inline" number="3" id="push3"></div>
+    </div>
+    <div class="indicator">
+      <h1>SIMON</h1>
+      <div class="row mid">
+        <div class="counter inline">00</div>
+        <button type="button" name="button" id="start">Start</button>
+        <button type="button" name="button" class="strict" id="strict">Strict</button>
+      </div>
+      <div class="row bot">
+        <span>
+          <p class="inline">OFF</p>
+          <div class="switch inline">
+            <div class="switch-inside"></div>
+          </div>
+          <p class="inline">ON</p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="winner">
+    <p>YOU WON!</p>
+    <small>Play again</small>
+  </div>
+</body>

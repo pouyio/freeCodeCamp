@@ -1,0 +1,130 @@
+body {
+  background: #4a4a4a;
+}
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: #adc42d;
+  font-size: 4em;
+  margin-top: .6em;
+  font-family: 'Kaushan Script', cursive;
+}
+.fa {
+  color: white;
+}
+.fa-wikipedia-w{
+  margin-right: -13px;
+}
+input, textarea {
+  border: none;
+  padding: 4px 1em;
+  text-align: center;
+  border-radius: 100px;
+  color: #4a4a4a !important;
+}
+
+input:focus, button:focus {
+  outline:4px;
+}
+::-webkit-input-placeholder {
+  color: rgba(45, 53, 89, 0.3);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(45, 53, 89, 0.3);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(45, 53, 89, 0.3);
+}
+:-ms-input-placeholder {
+  color: rgba(45, 53, 89, 0.3);
+}
+button {
+  background: #3F61A6;
+  border: none;
+  padding: 5px;
+  border-radius: 100px;
+}
+button:hover {
+  background: #AED3F2;
+}
+button:hover .fa {
+  color: #4a4a4a;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.suggestions {
+  padding-left: 0;
+  list-style: none inside none;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: #AED3F2;
+  max-width: 25em;
+  margin: .7em auto 0 auto;
+  color: #4a4a4a;
+  font-size: .85em;
+}
+.suggestions li{
+  margin: 0 auto;
+  padding: 4px;
+  border-bottom: 1px solid #4a4a4a;
+}
+.suggestions li:hover {
+  background-color: #3F61A6;
+  padding: 0;
+  color: #AED3F2;
+  font-size: 20px;
+}
+li.key-hover{
+  background-color: #3F61A6;
+  padding: 0;
+  color: #AED3F2;
+  font-size: 20px;
+}
+.results {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1em;
+  text-align: left;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.results li {
+  background: #3F61A6;
+  margin: 1em;
+  padding: .5em .9em;
+  border-left: 4px solid #3F61A6;
+  display: block;
+}
+.results li:hover {
+  background: #AED3F2;
+  border-left: 4px solid #adc42d;
+  color: #4a4a4a;
+}
+.results li:hover h3 {
+  color: #4a4a4a;
+}
+h3 {
+  margin-top: .3em;
+  margin-bottom: 0em;
+  color: #D5E5F2;
+}
+.snippet {
+  font-size: .8em;
+}
+@media all and (max-width: 450px) {
+  header h1 {
+    margin-top: .3em;
+    margin-bottom: .3em;
+    font-size: 2.5em;
+  }
+}

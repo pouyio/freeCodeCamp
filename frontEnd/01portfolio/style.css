@@ -1,0 +1,151 @@
+.navbar {
+  background-color: #1A3971;
+  border: none;
+}
+
+.navbar-style,
+.navbar-style a {
+  color: white !important;
+  padding-right: 10px;
+}
+
+.navbar-style a:hover {
+  color: #EEE3D3 !important;
+}
+
+.tittle-top {
+  color: white;
+  font-family: "Bitter", serif;
+  font-size: 4.9em;
+}
+
+.subtittle-top {
+  color: #eaeaea;
+  font-family: "Bitter", serif;
+  font-size: 2.3em;
+}
+
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  background: none;
+}
+
+.home li{
+  display: inline;
+}
+
+.home a{
+  color:#72a6ff;
+}
+
+.home a:hover{
+  color:#EEE3D3;
+}
+
+.btn {
+  margin: 4px 4px;
+  border-width: 0px;
+  color: white;
+}
+
+#btn-twitter {
+  background: #55ACEE;
+}
+
+#btn-twitter:hover {
+  background: white;
+  color: #55ACEE;
+}
+
+#btn-email {
+  background: #F90101;
+}
+
+#btn-email:hover {
+  background: white;
+  color: #F90101;
+}
+
+#btn-freecodecamp {
+  background: #4a2b0f;
+}
+
+#btn-freecodecamp:hover {
+  background: white;
+  color: #4a2b0f;
+}
+
+#btn-github:hover {
+  background: #FFF;
+  color: #000;
+}
+
+#btn-github {
+  background: #000;
+  color: #FFF;
+}
+
+#btn-linkedin {
+  background: #0077B5;
+}
+
+#btn-linkedin:hover {
+  background: #FFF;
+  color: #0077B5;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.section-tittle {
+  color: #135B59;
+  font-family:'Bitter', serif;
+}
+
+p{
+  font-size:1.2em;
+}
+
+.home {
+  padding-top: 55px;
+  padding-bottom: 30px;
+  background: url("http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg");
+}
+
+.about {
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/60degree_gray.png");
+}
+
+.portfolio {
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bright_squares.png") repeat;
+  background-style:cover;
+}
+
+.inner-article{
+  background: #F0F3F3;
+  margin-bottom: 10px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#9BBFD6;
+  box-shadow: 0px 0px 20px -2px;
+}
+.inner-article:hover{
+  box-shadow:0px 0px 20px -2px #55ACEE;
+}
+
+.contact {
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/cardboard_flat.png");
+}
+
+.contact li{
+  display:block;
+  margin-bottom:9px;
+}
+
+footer {
+    padding: 10px 0;
+}

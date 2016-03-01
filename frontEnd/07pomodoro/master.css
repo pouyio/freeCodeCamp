@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #FFF;
+}
+main {
+  flex: 1;
+}
+.container {
+  margin-top: 5vh;
+  max-width: 60em;
+}
+.circles-wrp {
+  margin: 1.5em 0;
+}
+.btn-primary, .btn-danger {
+  margin-top: 2em;
+}
+span.time {
+  display: inline-block;
+  width: 2em;
+  margin: auto 1em;
+}
+.btn-info, .btn-primary {
+  border-radius: 6em 0 0 6em;
+}
+.btn-warning, .btn-danger {
+  border-radius: 0em 6em 6em 0;
+}
+h1 {
+  font-family: 'PT Serif', serif;
+  font-size:3.2em;
+}
+h3, .circle, button, .row {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+h5{
+  font-family: 'Crimson Text', serif;
+  font-size: 2em;
+}

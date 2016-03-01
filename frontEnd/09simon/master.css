@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'digitaldream';
+  src: url("https://cdn.rawgit.com/pouyio/fcc-simon/master/DIGITALDREAM.ttf") format('truetype');
+}
+body {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-family: 'Arbutus Slab', serif;
+}
+.inline {
+  display: inline-block;
+}
+
+/*========================================
+          BUTTONS
+========================================*/
+
+.wrap {
+  margin-top: 5vh;
+}
+.row {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.push {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+.push0 {
+  background: #0DCC17;
+  border-top-left-radius: 50%;
+}
+.push1 {
+  background: #FB241D;
+  border-top-right-radius: 50%;
+}
+.push2 {
+  background: #FFFF00;
+  border-bottom-left-radius: 50%;
+}
+.push3 {
+  background: #37b9ff;
+  border-bottom-right-radius: 50%;
+}
+.push0:active, .push0.glow {
+  background: radial-gradient(ellipse, #0DCC17, #054C09);
+}
+.push1:active, .push1.glow {
+  background: radial-gradient(ellipse, #FB241D, #4C0B09);
+}
+.push2:active, .push2.glow {
+  background: radial-gradient(ellipse, #FFFF00, #4C4C00);
+}
+.push3:active, .push3.glow {
+  background: radial-gradient(ellipse, #039EF2, #01324C);
+}
+
+/*========================================
+          INDICATOR
+========================================*/
+
+.indicator {
+  position: absolute;
+  top: calc(100px + 5vh);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  padding: 25px 0;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 .3em .3em .3em;
+  font-weight: bold;
+}
+.mid {
+  padding: .7em 0;
+  text-align: right;
+  height: 2em;
+}
+.counter {
+  background: black;
+  color: red;
+  padding: .3em;
+  width: 2em;
+  height: 1em;
+  font-family: "digitaldream";
+  font-weight: bold;
+  text-align: right;
+  border-radius: 5px;
+  float: left;
+  margin-left: 1em;
+}
+.mid button {
+  border: none;
+  border-radius: 3px;
+  background: #c8c8c8;
+  border-bottom: 3px solid black;
+  position: relative;
+  bottom: 0;
+}
+.mid button:active {
+  top: 3px;
+  border-bottom: none;
+}
+.mid button:focus {
+  outline: none;
+}
+.strict {
+  margin-right: 1em;
+  color: #858585;
+}
+.mid button.activated {
+  background: #0DB3D9;
+  color: white;
+  border-bottom: none;
+  position: relative;
+  bottom: -3px;
+}
+.switch {
+  position: relative;
+  width: 2em;
+  height: 1em;
+  background: #F2CB05;
+  margin: 0 .3em;
+  border-radius: 3px;
+  border: 2px solid #D93D4A;
+}
+.switch {
+  cursor: pointer;
+}
+.switch-inside {
+  position: absolute;
+  top: .1em;
+  left: 1em;
+  width: .8em;
+  height: .8em;
+  background: #D93D4A;
+  border-radius: 3px;
+  -webkit-transition: left .2s;
+  -moz-transition: left .2s;
+  -o-transition: left .2s;
+  transition: left .2s;
+}
+.off {
+  left: .2em;
+  -webkit-transition: left .2s;
+  -moz-transition: left .2s;
+  -o-transition: left .2s;
+  transition: left .2s;
+}
+
+/*========================================
+          GAME LOGIC CLASSES
+========================================*/
+
+.unclickable {
+  pointer-events: none;
+}
+.winner {
+  background: #ffd700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.visible {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.winner p {
+  margin-top: 45%;
+  margin-bottom: .1em;
+  font-size: 4em;
+}
+.winner small {
+  font-size: 2em;
+}
+
+/*========================================
+          MEDIA QUERIES
+========================================*/
+
+@media screen and (max-width:430px) {
+  .push {
+    width: 170px;
+    height: 170px;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+  .indicator {
+    top: calc(85px + 5vh);
+    left: calc(50% - 85px);
+    width: 180px;
+    height: 180px;
+    background: white;
+    border: 2px solid black;
+  }
+  .mid {
+    padding: .2em 0;
+  }
+  .counter {
+    padding: .3em;
+    width: 2em;
+    height: 1em;
+    border-radius: 5px;
+    margin-left: .3em;
+  }
+  .mid button {
+    font-size: .85em;
+  }
+  .strict {
+    margin-right: 1em;
+  }
+  .switch {
+    margin: .1em 0;
+  }
+  .bot {
+    font-size: .9em;
+  }
+}

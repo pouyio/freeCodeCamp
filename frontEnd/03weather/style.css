@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  background-image: url("http://i.imgur.com/LbXGI56.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  flex: 1 0 auto;
+}
+footer {
+  margin-top: 0 !important;
+}
+.hidden {
+  display: none;
+}
+.owf {
+  font-size: 14em !important;
+}
+
+.progress{
+  margin-top: 3em !important;
+}
+
+.card {
+  /*max-width: 700px;*/
+  margin-top: 3em;
+}
+.description-wrapper {
+  margin-top: -1em;
+}
+.description {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+.image-wrapper {
+  padding: 0em 6em;
+}
+.image {}
+.location, .date {
+  font-size: 0.7em;
+  color: #607d8b;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.temperature {
+  font-size: 2em;
+  font-weight: bold;
+  margin: -0.7em 0;
+}
+.switchLabel {
+  font-size: 0.8em;
+  color: #78909;
+}
+
+/***************
+     Switch
+***************/
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: #84c7c1;
+}
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #2674a6;
+}
+.switch label .lever {
+  background-color: #84c7c1 !important;
+}
+.switch label .lever:after {
+  background-color: #2674a6 !important;
+}
