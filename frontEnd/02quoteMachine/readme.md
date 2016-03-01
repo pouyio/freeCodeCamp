@@ -18,4 +18,4 @@ Fonts from google fonts:
 
 ---
 
-![Demo](/demo.gif)
+![Demo](demo.gif)
