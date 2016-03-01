@@ -1,0 +1,155 @@
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+header {
+  background: rgb(212, 235, 214);
+  width: 100%;
+  padding: .3em 0;
+  color: #37474F;
+}
+.title {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 3.4em;
+  margin: auto;
+}
+.subtitle {
+  font-family: 'Coming Soon', cursive;
+  font-size: .9em;
+  margin: auto;
+}
+.fa-heart {
+  color: red;
+}
+.content {
+  max-width: 600px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+blockquote {
+  /* fallback */
+  background: rgb(231, 245, 232);
+  background: rgba(231, 245, 232, 0.8);
+  font-family: 'Schoolbell', cursive;
+  font-size: 1.3em;
+  text-align: right;
+  padding: 0 1.7em 0 .5em;
+  margin: 3em 2em;
+  border-right: 12px solid #64B5F6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: auto;
+}
+.button-group {
+  width: 500px;
+  height: 300px;
+}
+button {
+  font-family: "Coming Soon", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: .3em .4em;
+  border-radius: 5px;
+  border: 2px solid red;
+  /* fallback */
+  background: white;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+}
+.animated {
+  -webkit-animation-name: myRotation;
+          animation-name: myRotation;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+@-webkit-keyframes myRotation {
+  0%, 50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  66% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+@keyframes myRotation {
+  0%, 50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  66% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+.new-quote {
+  float: left;
+  /* fallback */
+  background: rgb(231, 245, 232);
+  background: rgba(231, 245, 232, 0.8);
+  border: 2px solid #1B5E20;
+  color: #1B5E20;
+}
+.new-tweet {
+  float: right;
+  /* fallback */
+  background: rgb(226, 241, 252);
+  background: rgba(226, 241, 252, 0.8);
+  border: 2px solid #64B5F6;
+  color: #64B5F6;
+}
+@media all and (max-width:520px) {
+  .button-group {
+    width: 100%;
+    height: 6rem;
+  }
+  button {
+    width: 50%;
+    height: 100%;
+  }
+  .animated {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+  }
+  blockquote {
+    margin: 3em 0 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
