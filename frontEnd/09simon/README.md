@@ -1,9 +1,9 @@
-# FCC-Simon Game
+# Simon Game
 
 My solution to the [Zipline: Build a Simon Game](http://www.freecodecamp.com/challenges/zipline-build-a-simon-game) exercise from **FreeCodeCamp**. Traditional Simon game entirely made in HTML5, CSS and Javascript.
 
 ### Instructions
-To **start**  the game active global _ON/OFF_ switch and press start (or just simply refresh the page). **Colors** will slightly change and everyone has its **own sound**. Once finished the series it is your turn to press the same colors in the same order. If you do right, they will sound the same, but if you press an incorrect color, a different sound will be played and your turn will end. There are **two modes** of game controlled by the _Strict_ button:
+To **start**  the game active global *ON/OFF* switch and press start (or just simply refresh the page). **Colors** will slightly change and everyone has its **own sound**. Once finished the series it is your turn to press the same colors in the same order. If you do right, they will sound the same, but if you press an incorrect color, a different sound will be played and your turn will end. There are **two modes** of game controlled by the *Strict* button:
 
 - *Normal*: If you make a mistake, the series will be played again, so you can keep trying.
 - *Strict*: If you fail, the series is lost and the game starts over again.
