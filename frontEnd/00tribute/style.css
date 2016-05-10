@@ -1,0 +1,116 @@
+@font-face {
+    font-family: futurama-title;
+    src: url(./fonts/futuramaTitle.ttf);
+}
+@font-face {
+    font-family: futurama;
+    src: url(./fonts/futurama.ttf);
+}
+header {
+  background-color: #F5F5F5;
+  padding: .5em;
+}
+.centered {
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  font-family: futurama-title;
+  font-size: 3em;
+  color: #791F17;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  color: #4A4A4A;
+  font-family: futurama, futura;
+}
+.content {
+  background-color: white;
+  max-width: 730px;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+a {
+  text-decoration: none;
+  color: #006dde;
+}
+
+.content h1{
+  text-align: right;
+  font-family: futurama, futura, helvetica;
+  color: #628279;
+}
+
+.content h2 {
+  font-family: futura, helvetica;
+  font-stretch: extra-condensed;
+  color: #848383;
+}
+.content p {
+  font-family: futura, futurama, helvetica;
+  text-align: justify;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 5em;
+  margin: 2em auto;
+}
+blockquote {
+  border-left: 5px solid #4A4A4A;
+  margin: 0;
+  background: #F5F5F5;
+}
+
+p.quote {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.5em;
+  padding: .3em;
+}
+
+.farnsworth {
+  height: 150px;
+  position:  absolute;
+  top: -150px;
+  left: 0;
+  z-index: -1;
+}
+
+footer {
+  background-color: #F5F5F5;
+  padding: 1em;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-family: helvetica;
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+  }
+  .content h1 {
+    font-size: 1.5em;
+  }
+  .content h2 {
+    font-size: 1.35em;
+  }
+  blockquote {
+    margin: 0 -0.5em;
+  }
+  p.quote {
+    font-size: 1.2em;
+  }
+}
