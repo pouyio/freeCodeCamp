@@ -1,151 +1,237 @@
-.navbar {
-  background-color: #1A3971;
-  border: none;
-}
-
-.navbar-style,
-.navbar-style a {
-  color: white !important;
-  padding-right: 10px;
-}
-
-.navbar-style a:hover {
-  color: #EEE3D3 !important;
-}
-
-.tittle-top {
-  color: white;
-  font-family: "Bitter", serif;
-  font-size: 4.9em;
-}
-
-.subtittle-top {
-  color: #eaeaea;
-  font-family: "Bitter", serif;
-  font-size: 2.3em;
-}
-
-a:hover,
-a:visited,
-a:active {
+a {
   text-decoration: none;
-  background: none;
+  color: inherit;
 }
 
-.home li{
-  display: inline;
+.navbar {
+  position: fixed;
+  top: 0;
+  border: 15px solid #252525;
+  border-bottom: none;
+  box-shadow: 0 -2px 7px #252525;
+  background: white;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(./images/background.png);
+  background-repeat: repeat-x;
 }
-
-.home a{
-  color:#72a6ff;
+.nav-item {
+  padding: 1em;
+  font-family: avenir next, helvetica;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 9px;
 }
-
-.home a:hover{
-  color:#EEE3D3;
-}
-
-.btn {
-  margin: 4px 4px;
-  border-width: 0px;
+.active {
+  background: #252525;
   color: white;
+  font-weight: bold;
 }
-
-#btn-twitter {
-  background: #55ACEE;
-}
-
-#btn-twitter:hover {
+.nav-item:hover {
   background: white;
-  color: #55ACEE;
+  color: #252525;
 }
-
-#btn-email {
-  background: #F90101;
+.welcome {
+  text-align: center;
+  border: 15px solid #252525;
+  border-top: none;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-#btn-email:hover {
-  background: white;
-  color: #F90101;
+.pretitle {
+  text-decoration: underline;
+  font-size: 1.3em;
 }
-
-#btn-freecodecamp {
-  background: #4a2b0f;
+.title {
+  font-size: 3.6em;
+  margin-bottom: 0;
 }
-
-#btn-freecodecamp:hover {
-  background: white;
-  color: #4a2b0f;
+.subtitle {
+  color: rgba(37, 37, 37, 0.5);
+  font-weight: lighter;
+  margin-bottom: 3em;
+  margin-top: .5em;
 }
-
-#btn-github:hover {
-  background: #FFF;
-  color: #000;
+.introduction {
+  text-align: justify;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 1em;
 }
-
-#btn-github {
-  background: #000;
-  color: #FFF;
-}
-
-#btn-linkedin {
-  background: #0077B5;
-}
-
-#btn-linkedin:hover {
-  background: #FFF;
-  color: #0077B5;
-}
-
-section {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.section-tittle {
-  color: #135B59;
-  font-family:'Bitter', serif;
-}
-
-p{
-  font-size:1.2em;
-}
-
-.home {
-  padding-top: 55px;
-  padding-bottom: 30px;
-  background: url("http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg");
-}
-
-.about {
-  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/60degree_gray.png");
-}
-
 .portfolio {
-  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bright_squares.png") repeat;
-  background-style:cover;
+  background: #252525;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 5px;
+  -webkit-column-gap: 5px;
+  -ms-column-gap: 5px;
+  column-gap: 5px;
+  border-left: 15px solid #252525;
+  border-right: 15px solid #252525;
 }
 
-.inner-article{
-  background: #F0F3F3;
-  margin-bottom: 10px;
-  border-width:1px;
-  border-style:solid;
-  border-color:#9BBFD6;
-  box-shadow: 0px 0px 20px -2px;
+.web {
+  -webkit-column-break-inside: avoid;
+  -moz-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  position: relative;
+  margin: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+
 }
-.inner-article:hover{
-  box-shadow:0px 0px 20px -2px #55ACEE;
+.web img {
+  width: 100%;
+  transition: opacity 5s ease-out;
+  position: relative;
+  z-index: 2;
+  display: block;
+  opacity: 1;
+}
+.site:hover img{
+  animation: darker .25s forwards, zoomed 10s linear forwards;
+}
+
+@keyframes darker {
+  from {opacity: 1;}
+  to {opacity: 0.15;}
+}
+@keyframes zoomed {
+  from {transform: scale(1);}
+  to {transform: scale(1.4);}
+}
+
+figcaption {
+  width: 100%;
+  height: 100%;
+  background: #252525;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 .5em;
+  box-sizing: border-box;
+}
+
+.web-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.web-title, .web-description {
+  font-size: .87em;
+  font-family: Avenir next;
 }
 
 .contact {
-  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/cardboard_flat.png");
+  min-height: 100vh;
+  border: 15px solid #252525;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.contact li{
-  display:block;
-  margin-bottom:9px;
+.contact-list {
+  text-align: center;
+  list-style-type: none;
+  padding: 17vh 0 3vh 0;
+  height: 100%;
+  margin-bottom: 0;
+}
+.list-item {
+  width: 100%;
+  font-family: helvetica, sans-serif;
+  font-size: 2.7em;
+  padding: .4em 0;
 }
 
-footer {
-    padding: 10px 0;
+.contact-list span {
+  color: #008280;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.list-item:hover{
+  background: #252525;
+  color: white;
+}
+
+.note{
+  position:absolute;
+  font-style: italic;
+  font-size: .87em;
+  padding: 0 1em;
+  bottom: 0;
+  right: 0;
+}
+/*-------------------
+      MEDIA QUERIES
+---------------------*/
+@media (max-width: 950px) {
+  figcaption {
+    position: relative;
+    background: white;
+    color: #252525;
+  }
+  .site:hover img {
+    animation: none;
+  }
+  .portfolio {
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .nav-item {
+    font-size: .9em;
+  }
+  .title {
+    font-size: 2.6em;
+  }
+  .list-item {
+    font-size: 1.9em;
+  }
+  .note {
+    font-size: .9em;
+  }
+}
+@media (max-width: 520px) {
+  .portfolio {
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  .nav-item {
+    font-size: .8em;
+  }
+  .pretitle {
+    font-size: 1em;
+  }
+  .title {
+    font-size: 2.2em;
+  }
+  .subtitle {
+    font-size: 1.4em;
+  }
+  .introduction {
+    font-size: .8em;
+  }
+  .list-item {
+    font-size: 1.5em;
+  }
+  .note {
+    font-size: .78em;
+  }
 }

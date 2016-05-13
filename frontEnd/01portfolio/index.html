@@ -1,192 +1,93 @@
-<!-- TO-DO: Parallax effect: http://keithclark.co.uk/articles/pure-css-parallax-websites/ -->
+<!DOCTYPE html>
+<html>
 
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Portfolio</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top myNavbarColored">
-      <a class="navbar-brand navbar-style">Vicente Ortiz</a>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right navbar-style">
-          <li><a class="nav navbar-nav" href="#home">Home</a></li>
-          <li><a class="nav navbar-nav" href="#about">About</a></li>
-          <li><a class="nav navbar-nav" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav navbar-nav" href="#contact">Contact</a></li>
-        </ul>
-
-    </nav>
-    <!--/.navbar-collapse-->
-
-    <section id="home" class="row home">
-      <h1 class="tittle-top text-center">My Portfolio</h1>
-      <h2 class="subtittle-top text-center">First zipline made for <a href="#">freeCodeCamp</a> course.</h2>
-      </br>
-      <ul class="text-center">
-        <li>
-          <a>
-            <button id="btn-email" class="btn btn-default">
-              <span class="fa fa-envelope"> Email</button>
-          </a>
-        </li>
-        <li>
-          <a>
-            <button id="btn-twitter" class="btn btn-default">
-              <span class="fa fa-twitter"> Twitter</button>
-          </a>
-        </li>
-        <li>
-          <a>
-            <button id="btn-github" class="btn btn-default">
-              <span class="fa fa-github"> Github</button>
-          </a>
-        </li>
-        <li>
-          <a>
-            <button id="btn-freecodecamp" class="btn btn-default">(
-              <span class="fa fa-fire">) FreeCodeCamp</button>
-          </a>
-        </li>
-        <li>
-          <a>
-            <button id="btn-linkedin" class="btn btn-default">
-              <span class="fa fa-linkedin"> LinkedIn</button>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section id="about" class="row about">
-      <div class="container">
-        <h1 class="section-tittle text-center col-xs-12">ABOUT</h1>
-        </br>
-        <div class="col-md-7 col-sm-7 col-xs-12">
-          <p>Here I am, my name is Vicente and I live in a little town in Spain. I have recently gratuated in Electronics Engineering and now I'm taking a Web Technologies Master. As I am a passionate about technology, I always look forward to learn something
-            new and experiment whether it is with building and programming robots or coding web pages.</br>
-            This is my first made from scratch site so it will be improved as I learn new solutions and methods</p>
-        </div>
-        <div class="col-md-5 col-sm-5 hidden-xs">
-          <img class="img-circle img-responsive" src="https://pbs.twimg.com/profile_images/430506305397075968/qrNSK8sf.jpeg">
-        </div>
-      </div>
-    </section>
-    <!--Portfolio-->
-    <section id="portfolio" class="row portfolio">
-      <div class="container">
-        <h1 class="section-tittle text-center">PORTFOLIO</h1>
-        <article class="col-md-4 col-sm-6 col-xs-12 portfolio-article">
-          <div class="inner-article">
-            <a class="article-link" href="#">
-              <img class="img-portfolio img-responsive" src="http://www.gifted-life.co.uk/wp-content/uploads/2014/12/blue-background-11.jpg">
-              <div class="portfolio-description text-center">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="col-md-4 col-sm-6 col-xs-12 portfolio-article">
-          <div class="inner-article">
-            <a class="article-link" href="#">
-              <img class="img-portfolio img-responsive" src="http://www.gifted-life.co.uk/wp-content/uploads/2014/12/blue-background-11.jpg">
-              <div class="portfolio-description text-center">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="col-md-4 col-sm-6 col-xs-12 portfolio-article">
-          <div class="inner-article">
-            <a class="article-link" href="#">
-              <img class="img-portfolio img-responsive" src="http://www.gifted-life.co.uk/wp-content/uploads/2014/12/blue-background-11.jpg">
-              <div class="portfolio-description text-center">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="col-md-4 col-sm-6 col-xs-12 portfolio-article">
-          <div class="inner-article">
-            <a class="article-link" href="#">
-              <img class="img-portfolio img-responsive" src="http://www.gifted-life.co.uk/wp-content/uploads/2014/12/blue-background-11.jpg">
-              <div class="portfolio-description text-center">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!--Section-->
-    <section id="contact" class="row contact">
-      <div class="container">
-        <h1 class="section-tittle text-center">CONTACT</h1>
-        </br>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <p>Here you can find several places where you can find me:</p>
-          <ul class="text-center">
-            <li>
-              <a>
-                <button id="btn-email" class="btn btn-default">
-                  <span class="fa fa-envelope"> Email</button>
-              </a>
-            </li>
-            <li>
-              <a>
-                <button id="btn-twitter" class="btn btn-default">
-                  <span class="fa fa-twitter"> Twitter</button>
-              </a>
-            </li>
-            <li>
-              <a>
-                <button id="btn-github" class="btn btn-default">
-                  <span class="fa fa-github"> Github</button>
-              </a>
-            </li>
-            <li>
-              <a>
-                <button id="btn-freecodecamp" class="btn btn-default">(
-                  <span class="fa fa-fire">) FreeCodeCamp</button>
-              </a>
-            </li>
-            <li>
-              <a>
-                <button id="btn-linkedin" class="btn btn-default">
-                  <span class="fa fa-linkedin"> LinkedIn</button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="list-inline">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <nav id="nav" class="navbar" data-gumshoe-header data-gumshoe>
+    <a class="nav-item" id="nav-welcome" href="#welcome">Vicente.</a>
+    <a class="nav-item" id="nav-portfolio" href="#portfolio">Portfolio</a>
+    <a class="nav-item" id="nav-contact" href="#contact">Contact</a>
+  </nav>
+  <section id="welcome" class="welcome section">
+    <p class="pretitle">
+      Meet my work
+    </p>
+    <h1 class="title">Vicente Ortiz García-Cervigón</h1>
+    <h2 class="subtitle">Web developer and Electronic Engineer</h2>
+    <p class="introduction">
+      I am a young spanish boy. I recently graduated in Electronics Engineering and soon I found a new love in web programming. Although I did code some robots, this is a new world for me and I am always looking forward to learn something new and experiment.
+    </p>
+  </section>
+  <section id="portfolio" class="portfolio section">
+    <figure class="web site">
+      <a href="http://limpiosity.qubic.es" target="_blank">
+        <img src="./images/00.png" alt="" />
+        <figcaption>
+          <h1 class="web-title">Limpiosity Robot</h1>
+          <p class="web-description">
+            Roomba like DIY robot site with all the explanations to build it.
+          </p>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="web site">
+      <a href="http://vicenteortiz.me" target="_blank">
+        <img src="./images/01.png" alt="" />
+        <figcaption>
+          <h1 class="web-title">Personal site</h1>
+          <p class="web-description">
+            Personal website with my CV and contact links.
+          </p>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="web">
+      <p data-height="700" data-theme-id="0" data-slug-hash="JYowMb" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/JYowMb/">FCC-Cat facts</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+    <figure class="web">
+      <p data-height="478" data-theme-id="0" data-slug-hash="ZbNmOv" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/ZbNmOv/">FCC-Simon</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+    <figure class="web">
+      <p data-height="265" data-theme-id="0" data-slug-hash="megLJB" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/megLJB/">FCC-Tic Tac Toe</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+    <figure class="web">
+      <p data-height="265" data-theme-id="0" data-slug-hash="yYzXNN" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/yYzXNN/">Simple calculator</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+    <figure class="web">
+      <p data-height="265" data-theme-id="0" data-slug-hash="GpEBVZ" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/GpEBVZ/">FreeCodeCamp Twitch</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+    <figure class="web">
+      <p data-height="533" data-theme-id="0" data-slug-hash="jbyoEW" data-default-tab="result" data-user="pouyio" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pouyio/pen/jbyoEW/">FreeCodeCamp Pomodoro</a> by Vicente (<a href="http://codepen.io/pouyio">@pouyio</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    </figure>
+  </section>
+  <section id="contact" class="contact section">
+    <ul class="contact-list">
+      <li class="list-item"><a href="#"><i class="fa fa-github" aria-hidden="true"></i> my code <i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="list-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> my tweets <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li class="list-item"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i> my education <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      <li class="list-item"><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i> my CV <i class="fa fa-desktop" aria-hidden="true"></i></a></li>
+      <li class="list-item">
+        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Here <span class="you">you</span>* can say Hello <i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-item"><a href="#">(<i class="fa fa-fire" aria-hidden="true"></i>) my exercises (<i class="fa fa-fire" aria-hidden="true"></i>)</a></li>
+    </ul>
+    <p class="note">*Actually you can say hello in the rest of the sites as well</p>
+  </section>
+  <script type="text/javascript" src="./js/gumshoe.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
+
+</html>
