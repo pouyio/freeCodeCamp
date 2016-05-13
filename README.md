@@ -4,7 +4,7 @@ These are my solutions to the Free Code Camp roadmap to learn javascript, HTML, 
 ## List
 Font-end projects and a short description:
 - [Tribute](frontEnd/00tribute): Tribute to professor Farnsworth from *Futurama*.
-- [Portfolio](fonrtEnd/01portfolio): Portfolio to show all my work.
+- [Portfolio](frontEnd/01portfolio): Portfolio to show all my work.
 - [Quote Machine](frontEnd/02quoteMachine): Random cat facts and backgrounds provided by APIs with the ability to tweet them.
 - [Weather app](frontEnd/03weather): Simple app to show weather on your location using HTML5 geolocation. *Broken*.
 - [Wikipedia viewer](frontEnd/04wikipedia): Wikipedia viewer using a search bar and suggested articles. *Broken*.
