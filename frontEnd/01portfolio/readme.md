@@ -5,7 +5,7 @@ My solution to [this project](https://www.freecodecamp.com/challenges/build-a-pe
 
 I used pure HTML/CSS and Javascript. I made use of [fontawesome](http://fontawesome.io) for the icons. Normalize.css included too. [Gumshoe](https://github.com/cferdinandi/gumshoe/) library for the navbar scroll spy.
 
-Live version in [codepen.io]()
+Live version in [codepen.io](http://codepen.io/pouyio/full/EjBRmB/)
 
 ---
 
