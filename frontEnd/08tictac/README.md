@@ -7,7 +7,7 @@ Also in [codepen.io](https://codepen.io/pouyio/full/megLJB/).
 
 ## Technical details
 
-For this project I used normalize, jQuery, [jQuery animations](https://jqueryui.com/animate/), [circles](https://github.com/lugolabs/circles).
+For this project I used normalize, jQuery.
 
 ## Fonts
 - Indie Flower
