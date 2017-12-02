@@ -2,7 +2,7 @@
 
 My solution to [this project](http://www.freecodecamp.com/challenges/build-a-tic-tac-toe-game).
 
-Also in [codepen.io](https://codepen.io/pouyio/full/ZbNmOv/).
+Also in [codepen.io](https://codepen.io/pouyio/full/megLJB/).
 
 ## Technical details
 
