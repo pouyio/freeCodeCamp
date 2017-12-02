@@ -1,4 +1,4 @@
-# Simon Game
+# Simon Game ([Online version 🌎](https://pouyio.github.io/freeCodeCamp/frontEnd/09simon/))
 
 My solution to the [Zipline: Build a Simon Game](http://www.freecodecamp.com/challenges/zipline-build-a-simon-game) exercise from **FreeCodeCamp**. Traditional Simon game entirely made in HTML5, CSS and Javascript.
 
