@@ -1,7 +1,7 @@
 var usersOnline = [];
 var usersNotOnline = [];
-var baseURL = "https://api.twitch.tv/kraken";
-var users = ["freecodecamp", "storbeck", "terakilobyte", "medrybw", "habathcx", "sorashi", "robotCaleb", "thomasballinger", "noobs2ninjas", "beohoff", "dubzyytv", "sysrpl"];
+var baseURL = "https://wind-bow.gomix.me/twitch-api";
+var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 function getInformation() {
   users.forEach(function(user) {
