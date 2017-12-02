@@ -17,4 +17,4 @@ Safari and Internet Explorer not supported yet due to their [Arrow functions](ht
 
 ---
 
-![Demo](/demo.gif)
+![Demo](./demo.gif)
