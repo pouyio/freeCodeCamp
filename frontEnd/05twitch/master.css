@@ -53,7 +53,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 @font-face {
   font-family: "Dimitri";
-  src: url(https://cdn.rawgit.com/pouyio/fcc-twitch/master/DIMIS___.TTF) format("truetype");
+  src: url(https://cdn.rawgit.com/pouyio/freeCodeCamp/c7deb4b4/frontEnd/05twitch/DIMIS___.TTF) format("truetype");
 }
 .tabs {
   font-family: "Dimitri", sans-serif;
