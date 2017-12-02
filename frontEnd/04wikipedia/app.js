@@ -1,6 +1,5 @@
 var baseURL = "https://en.wikipedia.org/w/api.php?";
-var suggest = "action=cirrus-suggest&callback=?&format=json&limit=5&text=";
-var searchItem = "action=opensearch&callback=?&search=";
+var searchItem = "action=opensearch&callback=?&limit=7&search=";
 var random = "action=query&list=random&rnnamespace=0&rnlimit=1&format=json&callback=?";
 $("document").ready(function() {
   //hovering keys on suggestions
@@ -42,11 +41,11 @@ $("document").ready(function() {
 function suggestAction() {
   var value = encodeURIComponent($(this).val().toLowerCase());
   if (value != "") {
-    $.getJSON(baseURL + suggest + value, function(data) {
+    $.getJSON(baseURL + searchItem + value, function(data) {
       $('ul.suggestions').css('visibility', 'visible');
       $('ul.suggestions li').remove();
-      data.suggest.forEach(function(val) {
-        $('ul.suggestions').append('<li class="selection-item">' + val.title + '</li>')
+      data[1].forEach(function(val) {
+        $('ul.suggestions').append('<li class="selection-item">' + val + '</li>')
       });
     });
   } else {
