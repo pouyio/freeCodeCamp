@@ -1,6 +1,8 @@
-# Quote Machine
+# Quote Machine (([Online version 🌎](https://pouyio.github.io/freeCodeCamp/frontEnd/02quoteMachine/)))
 
-My solution to the [Zipline: Build a Random Quote Machine](http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine) exercise from **FreeCodeCamp**. Simple random cat facts made in HTML5, CSS and Javascript. Live version in [codepen.io](http://codepen.io/pouyio/pen/JYowMb).
+My solution to the [Zipline: Build a Random Quote Machine](http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine) exercise from **FreeCodeCamp**. Simple random cat facts made in HTML5, CSS and Javascript.
+
+Also in [codepen.io](http://codepen.io/pouyio/pen/JYowMb).
 
 ## Technical details
 
@@ -15,7 +17,3 @@ Fonts from google fonts:
 - [Schoolbell](https://www.google.com/fonts/specimen/Schoolbell).
 - [Gochi Hand](https://www.google.com/fonts/specimen/Gochi+Hand).
 - [Coming Soon](https://www.google.com/fonts/specimen/Coming+Soon).
-
----
-
-![Demo](demo.gif)
