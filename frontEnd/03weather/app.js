@@ -2,10 +2,10 @@ var tempF = 0;
 var backgrounds = {
   2: "http://i.imgur.com/LbXGI56.jpg",
   3: "http://cloud-maven.com/wp-content/uploads/2014/10/DSC_0128.jpg",
-  5: "http://www.cominoforlag.no/ragnhild/wp-content/uploads/sites/17/2015/02/rainning-wallpaper-hd-background-73.jpg",
+  5: "https://www.metoffice.gov.uk/binaries/content/gallery/mohippo/images/migrated-image/r/heavy_rain_splashes_shutterstock_148721882.jpg",
   6: "http://cdn.playbuzz.com/cdn/43855897-a291-4adb-8612-644b90e139de/2f103744-195f-460a-a7ec-2d51e753d5b8.jpg",
   7: "http://nc.hcpress.com/img/aerosols_research.jpeg",
-  8: "http://globe-views.com/dcim/dreams/clouds/clouds-01.jpg",
+  8: "https://i.ytimg.com/vi/gKKYnNvfU1A/maxresdefault.jpg",
   9: "http://i.huffpost.com/gen/2176456/images/o-TORNADO-facebook.jpg"
 };
 $(document).ready(function() {
@@ -42,7 +42,7 @@ function getLocation() {
 }
 
 function getWeather(position) {
-  $.getJSON('http://api.openweathermap.org/data/2.5/weather?&lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + "&units=imperial", function(data) {
+  $.getJSON('https://api.openweathermap.org/data/2.5/weather?&lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + "&units=imperial&APPID=61a3c6dfeab8a3fa0b4ef40d38db60e4", function(data) {
     //Loading data into their placeholders
     $('.location').text(data.name + ", " + data.sys.country);
     $('.description').text(data.weather[0].description);

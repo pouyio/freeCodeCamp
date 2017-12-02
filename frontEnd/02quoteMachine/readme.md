@@ -6,12 +6,10 @@ Also in [codepen.io](http://codepen.io/pouyio/pen/JYowMb).
 
 ## Technical details
 
-Apart from HTML,CSS and Javascript, I made use of fontawesome and jQuery. Normalize.css included too. My first project trying to apply Module pattern to organize all code. Implemented my own *cache image system* to prevent blank backgrounds or loading waitings. First background image is always the same due to a better perfomance.
+Apart from HTML,CSS and Javascript, I made use of fontawesome and jQuery. Normalize.css included too. My first project trying to apply Module pattern to organize all code. Preloaded two images to feel faster the the start.
 
 APIs used:
 - Background images loaded from [thecatapi.com](http://exhibitionnest.com/cat), returning a random cat image from tumblr.
-- Cat facts API from [here](http://catfacts-api.appspot.com).
-- Avoiding CORS problems using [json2jsonp.com](https://json2jsonp.com).
 
 Fonts from google fonts:
 - [Schoolbell](https://www.google.com/fonts/specimen/Schoolbell).
