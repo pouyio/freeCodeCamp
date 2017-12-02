@@ -1,5 +1,5 @@
 var quote = {
-  backgrounds: ["http://24.media.tumblr.com/tumblr_m1jnblPxKm1rqpogjo1_500.jpg", "http://25.media.tumblr.com/tumblr_m44wdkCP9N1qhwmnpo1_1280.jpg"],
+  backgrounds: ["https://24.media.tumblr.com/tumblr_m1jnblPxKm1rqpogjo1_500.jpg", "https://25.media.tumblr.com/tumblr_m44wdkCP9N1qhwmnpo1_1280.jpg"],
   init: function () {
     this.cacheDom();
     this.bindEvents();
@@ -37,7 +37,7 @@ var quote = {
   },
   requestBackgrounds: function () {
     $.ajax({
-      url: "http://thecatapi.com/api/images/get?format=xml&results_per_page=20"
+      url: "https://thecatapi.com/api/images/get?format=xml&results_per_page=20"
     })
       .done((data) =>  {
         this.backgrounds = this.backgrounds.concat($(data).find('image url').toArray().map(d => d.innerHTML));
