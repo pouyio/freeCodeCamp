@@ -1,4 +1,4 @@
-# Quote Machine (([Online version 🌎](https://pouyio.github.io/freeCodeCamp/frontEnd/02quoteMachine/)))
+# Quote Machine ([Online version 🌎](https://pouyio.github.io/freeCodeCamp/frontEnd/02quoteMachine/))
 
 My solution to the [Zipline: Build a Random Quote Machine](http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine) exercise from **FreeCodeCamp**. Simple random cat facts made in HTML5, CSS and Javascript.
 
